@@ -1,0 +1,38 @@
+import pandas as pd
+import numpy as np
+import scipy
+import sklearn
+
+def test_pandas():
+    try:
+        print(f"Pandas Version: {pd.__version__}")
+        print("Pandas ist korrekt installiert.\n")
+    except Exception as e:
+        print(f"Fehler bei Pandas: {e}")
+
+def test_numpy():
+    try:
+        print(f"NumPy Version: {np.__version__}")
+        print("NumPy ist korrekt installiert.\n")
+    except Exception as e:
+        print(f"Fehler bei NumPy: {e}")
+
+def test_scipy():
+    try:
+        print(f"SciPy Version: {scipy.__version__}")
+        print("SciPy ist korrekt installiert.\n")
+    except Exception as e:
+        print(f"Fehler bei SciPy: {e}")
+
+def test_sklearn():
+    try:
+        print(f"Scikit-Learn Version: {sklearn.__version__}")
+        print("Scikit-Learn ist korrekt installiert.\n")
+    except Exception as e:
+        print(f"Fehler bei Scikit-Learn: {e}")
+
+if __name__ == "__main__":
+    test_pandas()
+    test_numpy()
+    test_scipy()
+    test_sklearn()
